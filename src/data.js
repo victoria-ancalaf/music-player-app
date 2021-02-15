@@ -10,7 +10,7 @@ function chillHop() {
         audio: "https://mp3.chillhop.com/serve.php/?mp3=10075",
         color: ["#205950", "#2ab3bf"],
         id: uuidv4(),
-        active: false,
+        active: true,
       },
       {
         name: "Daylight",
@@ -67,7 +67,7 @@ function chillHop() {
         artist: "Tom Doolie",
         cover: "https://chillhop.com/wp-content/uploads/2020/07/53eef8b1ac9bf40038b2b5dc7ca2d13fc19cf95e-1024x1024.jpg",
         id: uuidv4(),
-        active: true,
+        active: false,
         color: ["#3C2A38", "#6FABCF"],
         audio: "https://mp3.chillhop.com/serve.php/?mp3=7977"
       },

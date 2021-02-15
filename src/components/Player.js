@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlay,
@@ -8,7 +8,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Player = ({
-  currentSong,
   isPlaying,
   setIsPlaying,
   audioRef,
@@ -47,7 +46,7 @@ const Player = ({
           onChange={dragHandler}
           type="range"
         />
-        <p>{getTime(songInfo.duration)}</p>
+        <p>{getTime(songInfo.duration || 0)}</p>
       </div>
       <div className="play-control">
         <FontAwesomeIcon
